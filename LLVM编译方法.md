@@ -245,7 +245,7 @@ static RegisterPass<EncodeFunctionName2> X("encode2", "Encode Function Name Pass
 
 ​	在文件outpass内新建如下文件
 
-​	![1657375448949](.1657375448949.png)
+​	![1657375448949](./1657375448949.png)
 
 outPass文件的CMakeList.txt 如下
 
