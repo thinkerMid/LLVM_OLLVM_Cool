@@ -37,15 +37,15 @@ Setting->cmake
 
 项目选择clang|debug
 
-![1656828580337](.\1656828580337.png)
+![1656828580337](./1656828580337.png)
 
 
 
-![1656828713294](.\1656828713294.png)
+![1656828713294](./1656828713294.png)
 
 /home/lh/keshi2/hello_clang.c -o /home/lh/keshi2/hello_clang_cloin 编译生成的配置路径
 
-![1656828750750](.\1656828750750.png)
+![1656828750750](./1656828750750.png)
 
 ## 4.使用hello Pass
 
@@ -61,15 +61,15 @@ opt -load LLVMHello.so  -enable-new-pm=0 -hello hello.bc  //这里可以将hello
 
 在有debug版本的opt和libhellopass.so的前提下 使用 第四点 的命令 在opt,cpp的main 以及hello.cpp的模块下断点
 
-![1656853435553](.\1656853435553.png)
+![1656853435553](./1656853435553.png)
 
 
 
-![1656853511593](.\1656853511593.png)
+![1656853511593](./1656853511593.png)
 
 
 
-![1656853701097](.\1656853511593.png)
+![1656853701097](./1656853511593.png)
 
 
 
@@ -89,7 +89,7 @@ opt -load '/home/lh/llvm-project-9.0.1/llvm/cmake-build-debug/lib/LLVMHello.so' 
 
 
 
-![1657365982236](.\1657365982236.png)
+![1657365982236](./1657365982236.png)
 
 ### 	1.在llvm=>lib=>Transforms下创建  EncodeFunctionName 目录
 
@@ -213,7 +213,7 @@ ninja LLVMEncodeFunctionName2
 
 结果如下图
 
-![1657368472512](.\1657368472512.png)
+![1657368472512](./1657368472512.png)
 
 ### 7.使用pass
 
@@ -237,7 +237,7 @@ static RegisterPass<EncodeFunctionName2> X("encode2", "Encode Function Name Pass
 
 ### 8.输出结果
 
-![1657371511767](.\1657371511767.png)
+![1657371511767](./1657371511767.png)
 
 ## 8.源码之外创建一个pass
 
@@ -245,7 +245,7 @@ static RegisterPass<EncodeFunctionName2> X("encode2", "Encode Function Name Pass
 
 ​	在文件outpass内新建如下文件
 
-​	![1657375448949](.\1657375448949.png)
+​	![1657375448949](.1657375448949.png)
 
 outPass文件的CMakeList.txt 如下
 
