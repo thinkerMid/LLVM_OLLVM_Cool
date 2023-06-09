@@ -21,15 +21,15 @@ cd build_release
 cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_INCLUDE_TESTS=OFF -DLLVM_ENABLE_PROJECTS="clang;" ../llvm // 编译release版本
 ```
 
-![1656849936349](.\llvm编译报错.png)
+![](./1656849936349.png)
 
 ## 2.使用clion编译方法
 
-![1656815478866](./打开llvm项目.png)
+![](./打开llvm项目.png)
 
 Setting->cmake
 
-![1656815812672](./设置编译clang和llvm规则.png)
+![1656815812672](./1656815812672.png)
 
 ## 3.调试clang的方法
 
@@ -37,15 +37,15 @@ Setting->cmake
 
 项目选择clang|debug
 
-![1656828580337](.\调试clang.png)
+![1656828580337](.\1656828580337.png)
 
 
 
-![1656828713294](.\配置clang.png)
+![1656828713294](.\1656828713294.png)
 
 /home/lh/keshi2/hello_clang.c -o /home/lh/keshi2/hello_clang_cloin 编译生成的配置路径
 
-![1656828750750](.\配置clang2.png)
+![1656828750750](.\1656828750750.png)
 
 ## 4.使用hello Pass
 
@@ -61,15 +61,15 @@ opt -load LLVMHello.so  -enable-new-pm=0 -hello hello.bc  //这里可以将hello
 
 在有debug版本的opt和libhellopass.so的前提下 使用 第四点 的命令 在opt,cpp的main 以及hello.cpp的模块下断点
 
-![1656853435553](.\opt调试hellopass.png)
+![1656853435553](.\1656853435553.png)
 
 
 
-![1656853511593](.\opt调试hellopass2.png)
+![1656853511593](.\1656853511593.png)
 
 
 
-![1656853701097](.\opt调试hellopass3.png)
+![1656853701097](.\1656853511593.png)
 
 
 
@@ -699,4 +699,5 @@ add_definitions("-mllvm -fla -mllvm -split -mllvm -split_num=3")
 ```
 
 ![1658631703335](.\1658631703335.png)
+
 
